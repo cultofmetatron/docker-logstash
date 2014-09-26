@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER P. Barrett Little <barrett@barrettlittle.com>
+MAINTAINER Peter de Croos <cultofmetatron@aumlogic.com>
 
 # Download latest package lists & install dependencies
 RUN apt-get update && \
@@ -30,6 +30,9 @@ EXPOSE 9300
 
 # Kibana
 EXPOSE 9292
+
+VOLUME ["/var/log/postgresql"]
+
 
 # Start logstash
 ENTRYPOINT ["/app/bin/boot"]

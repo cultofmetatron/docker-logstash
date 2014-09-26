@@ -1,10 +1,10 @@
-NAME = pblittle/docker-logstash
+NAME = cultofmetatron/docker-logstash
 VERSION = 0.8.0
 
 # Set the LOGSTASH_CONFIG_URL env var to your logstash.conf file.
 # We will use our basic config if the value is empty.
 #
-LOGSTASH_CONFIG_URL ?= https://gist.github.com/pblittle/8778567/raw/logstash.conf
+LOGSTASH_CONFIG_URL ?= https://gist.githubusercontent.com/cultofmetatron/7e0a82f97c2887fc930e/raw/1bebdf0921683b4624c79f1c42fa7b67082d1678/logstash.conf
 
 # This default host and port are for using the embedded elasticsearch
 # in LogStash. Set the ES_HOST and ES_PORT to use a node outside of
